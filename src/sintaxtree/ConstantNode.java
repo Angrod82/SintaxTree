@@ -2,15 +2,15 @@ package sintaxtree;
 
 public class ConstantNode extends Node{
     
-    private double value;
+    private double contant;
     
-    public ConstantNode(double value) {
-        this.value = value;
+    public ConstantNode(double constant) {
+        this.contant = constant;
     }
 
     @Override
     public double evaluate() {
-        return value;
+        return contant;
     }
     
 }
