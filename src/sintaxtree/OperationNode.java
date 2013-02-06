@@ -1,11 +1,11 @@
 package sintaxtree;
 
-public class FatherNode extends Node {
+public class OperationNode extends Node {
     
     private Node leftSon;
     private Node rightSon;
     
-    public FatherNode(String symbol) {
+    public OperationNode(String symbol) {
         super(symbol);
         leftSon = null;
         rightSon = null;

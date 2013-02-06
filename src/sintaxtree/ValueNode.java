@@ -1,8 +1,8 @@
 package sintaxtree;
 
-public class LeafNode extends Node{
+public class ValueNode extends Node{
     
-    public LeafNode(String symbol) {
+    public ValueNode(String symbol) {
         super(symbol);
     }
 
