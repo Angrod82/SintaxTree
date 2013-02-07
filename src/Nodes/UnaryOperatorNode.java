@@ -1,7 +1,5 @@
 package Nodes;
 
-import Nodes.Node;
-
 public abstract class UnaryOperatorNode extends Node{
     
     private Node son;

@@ -1,7 +1,5 @@
 package Nodes;
 
-import Nodes.Node;
-
 public class ConstantNode extends Node{
     
     private double contant;
