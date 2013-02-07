@@ -11,7 +11,7 @@ public class DivisionOperatorNode extends BinaryOperatorNode {
 
     @Override
     public double evaluate() {
-        return getLeftSon().evaluate() / getRighSon().evaluate();
+        return getLeftSon().evaluate() / getRightSon().evaluate();
     }
     
 }

@@ -20,7 +20,7 @@ public abstract class BinaryOperatorNode extends OperatorNode{
         this.leftSon = leftSon;
     }
 
-    public Node getRighSon() {
+    public Node getRightSon() {
         return righSon;
     }
 
