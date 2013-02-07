@@ -1,5 +1,11 @@
 package sintaxtree;
 
+import Nodes.BinaryOperators.AddOperatorNode;
+import Nodes.BinaryOperators.MultiplicationOperatorNode;
+import Nodes.ConstantNode;
+import Nodes.Node;
+import static java.lang.System.out;
+
 public class SintaxTree {
 
     public static void main(String[] args) {
@@ -9,6 +15,6 @@ public class SintaxTree {
         Node uno = new ConstantNode(1);
         Node suma = new AddOperatorNode(uno, multiplicacion);
         
-        System.out.println(suma.evaluate());
+        out.println(suma.evaluate());
     }
 }

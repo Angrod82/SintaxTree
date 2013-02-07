@@ -1,4 +1,4 @@
-package sintaxtree;
+package Nodes;
 
 public abstract class Node {
     

@@ -1,4 +1,6 @@
-package sintaxtree;
+package Nodes;
+
+import Nodes.Node;
 
 public class ConstantNode extends Node{
     

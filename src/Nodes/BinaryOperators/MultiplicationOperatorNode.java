@@ -1,4 +1,7 @@
-package sintaxtree;
+package Nodes.BinaryOperators;
+
+import Nodes.BinaryOperatorNode;
+import Nodes.Node;
 
 public class MultiplicationOperatorNode extends BinaryOperatorNode{
     

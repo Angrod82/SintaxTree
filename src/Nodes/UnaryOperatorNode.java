@@ -1,6 +1,8 @@
-package sintaxtree;
+package Nodes;
 
-public abstract class UnariOperatorNode extends Node{
+import Nodes.Node;
+
+public abstract class UnaryOperatorNode extends Node{
     
     private Node son;
 
