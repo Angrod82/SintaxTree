@@ -1,10 +1,10 @@
-package Types;
+package Evaluator.Types;
 
-public abstract class Value<Type> {
+public abstract class Type<Type> {
 
     private Type value;
     
-    public Value(Type value) {
+    public Type(Type value) {
         this.value = value;
     }
     
