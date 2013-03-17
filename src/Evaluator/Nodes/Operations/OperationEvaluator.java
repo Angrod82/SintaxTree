@@ -36,7 +36,7 @@ public class OperationEvaluator {
     }
     
     public static Type execute(Type arg1, Type arg2, String operatorName) throws ClassNotFoundException, InstantiationException, SecurityException, NoSuchMethodException, IllegalAccessException, InvocationTargetException {
-        return castToType(searchMethod(arg1, arg2, operatorName).invoke(arg1.getValue(), arg2.getValue()));
+        return castToType(searchMethod(arg1, arg2, operatorName).invoke(searchCalculator(arg1, arg2), arg1.getValue(), arg2.getValue()));
     }
     
 }
