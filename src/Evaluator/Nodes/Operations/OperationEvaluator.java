@@ -23,20 +23,8 @@ public class OperationEvaluator {
         return searchCalculator(arg1, arg2).getClass().getMethod(operatorName, arg1.getValue().getClass(), arg2.getValue().getClass());
     }
     
-    private static Type castToType(Object value) {
-        if(value instanceof Double)
-            return new DoubleType((Double)value);
-        if(value instanceof Integer)
-            return new IntegerType((Integer)value);
-        if(value instanceof String)
-            return new StringType((String)value);
-        if(value instanceof Boolean)
-            return new BooleanType((Boolean)value);
-        return null;
-    }
-    
     public static Type execute(Type arg1, Type arg2, String operatorName) throws ClassNotFoundException, InstantiationException, SecurityException, NoSuchMethodException, IllegalAccessException, InvocationTargetException {
-        return castToType(searchMethod(arg1, arg2, operatorName).invoke(searchCalculator(arg1, arg2), arg1.getValue(), arg2.getValue()));
+        return Converter.castToType(searchMethod(arg1, arg2, operatorName).invoke(searchCalculator(arg1, arg2), arg1.getValue(), arg2.getValue()));
     }
     
 }
