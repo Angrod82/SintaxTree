@@ -16,7 +16,7 @@ public class SintaxTree {
     public static Map<String, Method> signatureHashMap = new HashMap<>();
     
     static {
-        
+
     }
     
     public static void main(String[] args) {
@@ -29,4 +29,5 @@ public class SintaxTree {
         
         out.println(suma.evaluate().getValue());
     }
+
 }
