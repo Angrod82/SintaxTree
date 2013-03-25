@@ -9,7 +9,7 @@ import Evaluator.Types.*;
 import static java.lang.System.out;
 
 public class SintaxTree {
-
+    
     public static void main(String[] args) {
         Node tres = new ConstantNode(new DoubleType(3.0));
         Node dos = new ConstantNode(new DoubleType(2.0));
