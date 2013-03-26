@@ -1,6 +1,7 @@
-package Evaluator.Calculator;
+package Evaluator.Calculator.Calculators;
 
 import Evaluator.Annotations.Operation;
+import Evaluator.Calculator.Calculator;
 
 public class NumberCalculator extends Calculator {
     

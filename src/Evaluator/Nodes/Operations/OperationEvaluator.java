@@ -9,13 +9,13 @@ public class OperationEvaluator {
     
     private static Calculator searchCalculator(Type arg1, Type arg2) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
         if(arg1.getValue() instanceof Double && arg2.getValue() instanceof Double)
-            return (Calculator)Class.forName("Evaluator.Calculator.NumberCalculator").newInstance();
+            return (Calculator)Class.forName("Evaluator.Calculator.Calculators.NumberCalculator").newInstance();
         if(arg1.getValue() instanceof Double && arg2.getValue() instanceof Integer)
-            return (Calculator)Class.forName("Evaluator.Calculator.NumberCalculator").newInstance();
+            return (Calculator)Class.forName("Evaluator.Calculator.Calculators.NumberCalculator").newInstance();
         if(arg1.getValue() instanceof Integer && arg2.getValue() instanceof Double)
-            return (Calculator)Class.forName("Evaluator.Calculator.NumberCalculator").newInstance();
+            return (Calculator)Class.forName("Evaluator.Calculator.Calculators.NumberCalculator").newInstance();
         if(arg1.getValue() instanceof Integer && arg2.getValue() instanceof Integer)
-            return (Calculator)Class.forName("Evaluator.Calculator.NumberCalculator").newInstance();
+            return (Calculator)Class.forName("Evaluator.Calculator.Calculators.NumberCalculator").newInstance();
         return null;
     }
     
