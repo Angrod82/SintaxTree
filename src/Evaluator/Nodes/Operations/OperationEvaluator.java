@@ -13,7 +13,7 @@ public class OperationEvaluator {
     
     public static Type execute(Type arg1, Type arg2, String operatorName) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, InstantiationException {
         Method method = searchMethod(arg1, arg2, operatorName);
-        return Converter.castToType(method.invoke(method.getDeclaringClass().newInstance(), arg1.getValue(), arg2.getValue()));
+        return Typecasting.castToType(method.invoke(method.getDeclaringClass().newInstance(), arg1.getValue(), arg2.getValue()));
     }
     
 }

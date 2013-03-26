@@ -1,6 +1,6 @@
 package Evaluator.Types;
 
-public class Converter {
+public class Typecasting {
 
     public static Type castToType(Object value) {
         if (value instanceof Double) {
