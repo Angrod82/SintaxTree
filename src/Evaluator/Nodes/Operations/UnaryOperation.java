@@ -3,9 +3,6 @@ package Evaluator.Nodes.Operations;
 import Evaluator.Nodes.Node;
 import Evaluator.Operators.Operator;
 import Evaluator.Types.Type;
-import java.lang.reflect.InvocationTargetException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class UnaryOperation extends Operation {
     

@@ -47,7 +47,7 @@ public class BinaryOperation extends Operation {
             Type leftSon = this.leftSon.evaluate();
             Type rightSon = this.rightSon.evaluate();
             return OperationEvaluator.execute(leftSon, rightSon, getOperatorName());
-        } catch (ClassNotFoundException | InstantiationException | SecurityException | NoSuchMethodException | IllegalAccessException | InvocationTargetException ex) {
+        } catch (InstantiationException | SecurityException | IllegalAccessException | InvocationTargetException ex) {
             Logger.getLogger(BinaryOperation.class.getName()).log(Level.SEVERE, null, ex);
         }
         return null;

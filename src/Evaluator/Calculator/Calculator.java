@@ -1,5 +1,3 @@
 package Evaluator.Calculator;
 
-public abstract class Calculator {
-    
-}
+public abstract class Calculator { }
